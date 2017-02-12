@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		446FA6E81E4BE7C8002E1E68 /* ExtensionAVAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446FA6E71E4BE7C8002E1E68 /* ExtensionAVAudio.swift */; };
+		44C00FE81E4ABFE6009E8F7A /* CaptureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C00FE71E4ABFE6009E8F7A /* CaptureTableViewController.swift */; };
+		44C00FEB1E4AC7D5009E8F7A /* sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44C00FEA1E4AC7D5009E8F7A /* sound1.mp3 */; };
 		FF1C20FC1E4A8E400026DC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C20FB1E4A8E400026DC21 /* AppDelegate.swift */; };
 		FF1C20FE1E4A8E400026DC21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C20FD1E4A8E400026DC21 /* ViewController.swift */; };
 		FF1C21011E4A8E400026DC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1C20FF1E4A8E400026DC21 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		446FA6E71E4BE7C8002E1E68 /* ExtensionAVAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionAVAudio.swift; sourceTree = "<group>"; };
+		44C00FE71E4ABFE6009E8F7A /* CaptureTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureTableViewController.swift; sourceTree = "<group>"; };
+		44C00FEA1E4AC7D5009E8F7A /* sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sound1.mp3; path = ../../../../../../Desktop/sound1.mp3; sourceTree = "<group>"; };
 		FF1C20F81E4A8E400026DC21 /* FlashCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1C20FB1E4A8E400026DC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF1C20FD1E4A8E400026DC21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44C00FE91E4AC691009E8F7A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				44C00FEA1E4AC7D5009E8F7A /* sound1.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		FF1C20EF1E4A8E400026DC21 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +70,10 @@
 			children = (
 				FF1C20FB1E4A8E400026DC21 /* AppDelegate.swift */,
 				FF1C20FD1E4A8E400026DC21 /* ViewController.swift */,
+				44C00FE91E4AC691009E8F7A /* Sounds */,
 				FF1C20FF1E4A8E400026DC21 /* Main.storyboard */,
+				44C00FE71E4ABFE6009E8F7A /* CaptureTableViewController.swift */,
+				446FA6E71E4BE7C8002E1E68 /* ExtensionAVAudio.swift */,
 				FF1C21021E4A8E400026DC21 /* Assets.xcassets */,
 				FF1C21041E4A8E400026DC21 /* LaunchScreen.storyboard */,
 				FF1C21071E4A8E400026DC21 /* Info.plist */,
@@ -96,7 +113,7 @@
 				TargetAttributes = {
 					FF1C20F71E4A8E400026DC21 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 56AJJ634ZU;
+						DevelopmentTeam = 5DVT4T7E43;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,6 +144,7 @@
 				FF1C21061E4A8E400026DC21 /* LaunchScreen.storyboard in Resources */,
 				FF1C21031E4A8E400026DC21 /* Assets.xcassets in Resources */,
 				FF1C21011E4A8E400026DC21 /* Main.storyboard in Resources */,
+				44C00FEB1E4AC7D5009E8F7A /* sound1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1C20FE1E4A8E400026DC21 /* ViewController.swift in Sources */,
+				44C00FE81E4ABFE6009E8F7A /* CaptureTableViewController.swift in Sources */,
 				FF1C20FC1E4A8E400026DC21 /* AppDelegate.swift in Sources */,
+				446FA6E81E4BE7C8002E1E68 /* ExtensionAVAudio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,12 +281,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				DEVELOPMENT_TEAM = 5DVT4T7E43;
 				INFOPLIST_FILE = FlashCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BigZero.FlashCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,12 +296,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				DEVELOPMENT_TEAM = 5DVT4T7E43;
 				INFOPLIST_FILE = FlashCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BigZero.FlashCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -302,6 +326,7 @@
 				FF1C210C1E4A8E400026DC21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
